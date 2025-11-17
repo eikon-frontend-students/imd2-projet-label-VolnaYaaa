@@ -9,7 +9,7 @@
   <body>
 <header class="header">
   <div class="header-logo">
-    <img src="" alt="">
+    <img src="img/logo/logo-black.svg" alt="">
   </div>
   <nav class="header-navigation">
     <ul class="list list-inline">
@@ -36,8 +36,38 @@
         Playlist
       </p>
     </div>
-   
+    </div>
 </header>
+<main class="main">
+  <div class="left">
+    <div class="nav">
+      <button>news</button>
+    </div>
+
+    <div class="events">
+      <button>events</button>
+      <div class="date-place"></div>
+      <h2 class="card-titre">raster schwellen</h2>
+      <button class="more"><img src="img/logo/logo-black.svg" alt="more"></button>
+      <div class="desctription">
+        <p>Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction</p>
+      </div>
+      <img class="card-news" alt="card news">
+    </div>
+  </div>
+
+  <div class="opencall">
+    <button>opencall</button>
+  </div>
+
+  <div class="right">
+    <div class="albom"></div>
+  </div>
+</main>
+
+
+main.main>(div.left>(div.nav>button{news})+(div.events>button{events}+div.date-place+h2.card-titre{raster schwellen}+(button{more}>img)+(div.desctriptio>p{Schwelle (engl. = threshold, psych.) – 
+a limit below which a stimulus causes no reaction})+img.card-news))+(div.opencall>button{opencall})+div.right>div.albom
 
     <script src="js/main.js" type="module"></script>
   </body>
