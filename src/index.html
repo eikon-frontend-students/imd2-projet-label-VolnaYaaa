@@ -7,68 +7,89 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-<header class="header">
-  <div class="header-logo">
-    <img src="img/logo/logo-black.svg" alt="">
-  </div>
-  <nav class="header-navigation">
-    <ul class="list list-inline">
-      <li><a href="#">raster-media</a></li>
-      <li><a href="#">merch</a></li>
-      <li><a href="#">artistes</a></li>
-      <li><a href="#">projets</a></li>
-      <li><a href="#">contact</a></li>
-    </ul>
-  </nav>
-  <div class="header-player"></div>
-  <div class="header-spacer">
-    <ul>
-      <li><a href="#">search</a></li>
-      <li><a href="#">log in</a></li>
-      <li><a href="#">bag ( 0 )</a></li>
-    </ul>
-  </div>
-<div class="playlist">
-   <button class="play">Play
-  </button>
-    <div class="playlist">
-      <p>
-        Playlist
-      </p>
+<include src="./components/header.html"></include>
+ <nav>
+<div class="left-nav-secoder"> 
+ <div class="news"><li><a href="#">news</a></li></div>
+<div class="event"><li><a href="#">events</a></li></div>
+<div class="opencall"><li><a href="#">opencall</a></li></div>
+</div>
+ <div class="latest-releases"><li><a href="#">latest releases</a></li></div>
+ <nav>
+
+<div class="column-left">
+  <article class="events">
+    <header> 
+      <div class="placeholder"><img src="img/card/placeholder.png" alt="">
+      <time datetime="21.11.2025">21.11.2025</time>
+      <span class="place">The hague</span>
+      <h2 class="card-titre">raster. schwellen</h2>
+      <div class="actions">
+        <a href="#" class="more">
+          <p>⇉</p>
+          <p>more</p>
+        </a>
+        
+     </div>
+    </header>
+
+    <section class="description">
+      <p class="description body">Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction</p>
+    </section>
+
+    <footer><img class="card-news" src="img/card/photo-card.png" alt="card news"></footer>
+  </article>
+</div>
+
+<div class="column-right">
+  <article class="last-releases">
+    <header>
+      <div class="date">21.11.2025</div>
+      <a href="#" class="buy button outline">
+          <p>✇</p>
+          <p>buy</p>
+      </a>
+    </header>
+
+      <section class="tags">
+        <div class="tags"></div>
+      </section>
+
+      <section class="player">
+        <audio id="player" srcv class="player-ui">
+          <div class="status">
+            <span class="dot"></span>
+            <span class="text">STOP</span>
+          </div>
+          <div class="time">
+            <span id="current">00:00.000</span> / <span id="total">00:00.000</span>
+          </div>
+          <div class="event">EVENT</div>
+        </div>
+      </section>
+      <section class="name artistes">
+        <div class="name-artistes"></div>
+      </section>
     </div>
-    </div>
-</header>
-<main class="main">
-  <div class="left">
-    <div class="nav">
-      <button>news</button>
-    </div>
-
-    <div class="events">
-      <button>events</button>
-      <div class="date-place"></div>
-      <h2 class="card-titre">raster schwellen</h2>
-      <button class="more"><img src="img/logo/logo-black.svg" alt="more"></button>
-      <div class="desctription">
-        <p>Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction</p>
-      </div>
-      <img class="card-news" alt="card news">
-    </div>
   </div>
-
-  <div class="opencall">
-    <button>opencall</button>
-  </div>
-
-  <div class="right">
-    <div class="albom"></div>
-  </div>
-</main>
+</div>
 
 
-main.main>(div.left>(div.nav>button{news})+(div.events>button{events}+div.date-place+h2.card-titre{raster schwellen}+(button{more}>img)+(div.desctriptio>p{Schwelle (engl. = threshold, psych.) – 
-a limit below which a stimulus causes no reaction})+img.card-news))+(div.opencall>button{opencall})+div.right>div.albom
 
-    <script src="js/main.js" type="module"></script>
+
+
+
+<script>
+const tags = ["REFLE", "PERCUSSION", "SYNTHESIZER", "TECHNO", "DIGITAL", "R-M215"];
+const container = document.querySelector('.tags');
+
+tags.forEach(tag => {
+  container.innerHTML += `<a herf="" class="tag">${tag}</a>`;});
+</script>
+
+
+    <script src="js/main.js" type="module">
+
+    </script>
   </body>
 </html>
