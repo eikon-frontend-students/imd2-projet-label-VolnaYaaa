@@ -57,6 +57,7 @@
 
       <section class="player">
         <audio id="player" srcv class="player-ui">
+          <source src="#" type="audio/mpeg">
           <div class="status">
             <span class="dot"></span>
             <span class="text">STOP</span>
@@ -65,14 +66,16 @@
             <span id="current">00:00.000</span> / <span id="total">00:00.000</span>
           </div>
           <div class="event">EVENT</div>
-        </div>
       </section>
       <section class="name artistes">
         <div class="name-artistes"></div>
       </section>
-    </div>
-  </div>
+      <footer>
+        <img src="./img/card/photo-albom.png" alt="Gábor Lázár - reflex">
+      </footer>
+  </article>
 </div>
+
 
 
 
@@ -86,6 +89,15 @@ const container = document.querySelector('.tags');
 tags.forEach(tag => {
   container.innerHTML += `<a herf="" class="tag">${tag}</a>`;});
 </script>
+
+
+
+
+
+
+
+
+
 
 
     <script src="js/main.js" type="module">
