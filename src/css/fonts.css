@@ -1,0 +1,18 @@
+@font-face {
+
+font-family: 'BauzitVariable';
+
+src: url('../fonts/Bauziet\ Varible/.ttf') format('ttf');
+
+} 
+
+@font-face { 
+font-family: 'PolySans';
+src: url('../fonts/PolySans/PolySansTrial-MedianMono.otf') format('otf'),
+        url('../fonts/PolySans/PolySansTrial-NeutralMono.otf') format('otf'),
+        url('../fonts/PolySans/PolySansTrial-SlimMono.otf') format('otf'),
+}
+@font-face { 
+font-family: 'Aktiv';
+src: url('../fonts/Aktiv\ Grotesk\ Ex/.otf') format('otf');
+}
