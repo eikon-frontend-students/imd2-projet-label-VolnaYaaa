@@ -16,29 +16,3 @@ video {
   display: block;
 }
 
-
-body {
-  background: black;
-  color: white;
-  font-family: 'Bauzit', sans-serif;
-  font-size: 18px;
-  margin: 20px;
-}
-
-h1 {
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
-  font-weight: 700;
-  color: #333;
-}
-
-p {
-  font-family: 'BauzitVariable', sans-serif;
-  font-weight: 400;
-  color: #555;
-}
-
-p.poly {
-  font-family: 'PolySans', sans-serif;
-  font-weight: 400;
-  color: #007acc;
-}

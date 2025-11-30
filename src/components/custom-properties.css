@@ -1,0 +1,57 @@
+:root{
+    --color-neutral-100: #FFFFFF;
+    --color-neutral-900: #1A1919;
+
+    --accent-blue: #56FBF5;
+    --accent-green: #0EF616;
+    --accent-yellow: #FFFF01;
+    --accent-rose: #F707FA;
+}
+
+:root {
+    --font-title: 'Bauziet', sans-serif;
+    --font-dynamic: 'PolySans', sans-serif;
+
+    --letter-spacing-link: 0.75px;
+    --font-size-med-: 15px;
+    --font-size-sm: 13px;
+
+    --h1: 96.9px, var(--font-title);
+    --h2: 45px, var(--font-title);
+    --h3: 39.2px, var(--font-dynamic);
+    --h4: 30.7px, var(--font-title);
+}
+
+:root{
+    --padding-small: 5px;
+}
+
+
+.button-dark {
+    font-family: var(--font-link);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    background-color: var(--color-neutral-900);
+    color: var(--accent-blue);
+    padding: 5px;
+}
+
+.button-light-primary {
+    font-family: var(--font-link);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    background-color: var(--accent-rose);
+    color: var(--color-neutral-100);
+    padding: 5px;
+}
+
+.button-light-secondary {
+    font-family: var(--font-link);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    color: var(--color-neutral-900);
+    padding: 5px;
+}
