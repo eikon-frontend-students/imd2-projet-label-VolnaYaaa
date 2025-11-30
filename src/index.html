@@ -11,74 +11,74 @@
   </head>
   <body>
 <include src="components/header.html"></include>
-<!-- <nav class="secondery-navigation">
-    <div class="left-nav-secoder"> 
-    <div class="news"><li><a href="#">news</a></li></div>
-    <div class="event"><li><a href="#">events</a></li></div>
-    <div class="opencall"><li><a href="#">opencall</a></li></div>
+<main class="main-content">
+  <div class="column-left">
+      <nav class="secondary-navigation-left">
+        <ul class="nav-secondary">
+          <li class="nav-secondary left"><a href="#">news</a></li>
+          <li class="nav-secondary left"><a href="#">events</a></li>
+          <li class="nav-secondary left"><a href="#">opencall</a></li>
+        </ul>
+      </nav>
+
+      <article class="events">
+        <header> 
+          <div class="placeholder"><img src="img/card/placeholder.png" alt="">
+          <div class="time">21.11.2025</div>
+          <span class="place">The hague</span>
+          <h2 class="card-titre">raster. schwellen</h2>
+          <div class="actions">
+            <a href="#" class="more">
+              <p>⇉</p>
+              <p>more</p>
+            </a>
+        </div>
+        </header>
+
+        <section class="description">
+          <p class="description body">Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction</p>
+        </section>
+
+      <footer><img class="card-news" src="img/card/photo-card.png" alt="card news"></footer>
+      </article>
     </div>
-    <div class="latest-releases"><li><a href="#">latest releases</a></li></div>
-</nav>
 
-<div class="column-left">
-  <article class="events">
-    <header> 
-      <div class="placeholder"><img src="img/card/placeholder.png" alt="">
-      <time datetime="21.11.2025">21.11.2025</time>
-      <span class="place">The hague</span>
-      <h2 class="card-titre">raster. schwellen</h2>
-      <div class="actions">
-        <a href="#" class="more">
-          <p>⇉</p>
-          <p>more</p>
+  <div class="column-right">
+    <nav class="nav-secondary-right"><div class="latest-releases"><li><a href="#">latest releases</a></li></div>
+    <article class="last-releases">
+      <header>
+        <div class="date">21.11.2025</div>
+        <a href="#" class="buy button outline">
+            <p>✇</p>
+            <p>buy</p>
         </a>
-        
-     </div>
-    </header>
+      </header>
 
-    <section class="description">
-      <p class="description body">Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction</p>
-    </section>
+        <section class="tags">
+          <div class="tags"></div>
+        </section>
 
-    <footer><img class="card-news" src="img/card/photo-card.png" alt="card news"></footer>
-  </article>
-</div>
-
-<div class="column-right">
-  <article class="last-releases">
-    <header>
-      <div class="date">21.11.2025</div>
-      <a href="#" class="buy button outline">
-          <p>✇</p>
-          <p>buy</p>
-      </a>
-    </header>
-
-      <section class="tags">
-        <div class="tags"></div>
-      </section>
-
-      <section class="player">
-        <audio id="player" srcv class="player-ui">
-          <source src="#" type="audio/mpeg">
-          <div class="status">
-            <span class="dot"></span>
-            <span class="text">STOP</span>
-          </div>
-          <div class="time">
-            <span id="current">00:00.000</span> / <span id="total">00:00.000</span>
-          </div>
-          <div class="event">EVENT</div>
-      </section>
-      <section class="name artistes">
-        <div class="name-artistes"></div>
-      </section>
-      <footer>
-        <img src="./img/card/photo-albom.png" alt="Gábor Lázár - reflex">
-      </footer>
-  </article>
-</div>
-
+        <section class="player">
+          <audio id="player" srcv class="player-ui">
+            <source src="#" type="audio/mpeg">
+            <div class="status">
+              <span class="dot"></span>
+              <span class="text">STOP</span>
+            </div>
+            <div class="time">
+              <span id="current">00:00.000</span> / <span id="total">00:00.000</span>
+            </div>
+            <div class="event">EVENT</div>
+        </section>
+        <section class="name artistes">
+          <div class="name-artistes"></div>
+        </section>
+        <footer>
+          <img src="./img/card/photo-albom.png" alt="Gábor Lázár - reflex">
+        </footer>
+    </article>
+  </div>
+</main>
 <footer>
   
   <div class="marquee">
@@ -95,7 +95,7 @@
     </ul>
   </div>
 
-</footer> -->
+</footer>
 
     <script src="js/main.js" type="module">
 
