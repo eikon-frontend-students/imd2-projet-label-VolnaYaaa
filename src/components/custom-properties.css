@@ -13,20 +13,25 @@
 :root {
     --font-title: 'Bauziet', sans-serif;
     --font-dynamic: 'PolySans', sans-serif;
+    --font-symbol: 'Aktiv', sans-serif;
 
-    --letter-spacing-med: 0.75px;
+    --letter-spacing-small: 0.75px;
+    --letter-spacing-medium: 0.3px;
+
+    --line-height: 135%;
 
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
-    --font-size-med: 12px;
-    --font-size-sm: 13px;
+    --font-size-medium: 13px;
+    --font-size-small: 12px;
 
     --h1: 96.9px;
     --h2: 45px;
     --h3: 39.2px;
     --h4: 30.7px;
+    
 }
 
 :root {
@@ -36,43 +41,74 @@
     --button-border:1px solid var(--accent-rose);
 }
 
-:root [data-theme="dark"] {
+/* :root {
+
     background-color: var(--color-neutral-900);
     color: var(--color-neutral-400);
-}
-:root [data-theme="light"] {
+
+
     background-color: var(--color-neutral-100);
     color: var(--color-neutral-900);
-}
-:root [data-theme="border"] {
+
+
     background-color: var(--color-neutral-100);
     border: var(--button-border);
     color: var(--accent-rose);
-}
+} */
 
+.symbol{
+    font-family: var(--font-symbol);
+    font-size: var(--font-size-small);
+}
 .button {
+    display: flex;
+    flex-direction: row;
     font-family: var(--font-dynamic);
-    font-size: var(--font-size-med);
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-light);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-med);
+    align-items: center;
+}
+
+.button.primary {
+    background-color: var(--accent-rose);
+    color: var(--color-neutral-400);
+    justify-content: space-between;
+    width: 95px;
+    padding: 5px;
 }
 
 .button.tag {
     padding: var(--padding-small);
 }
 
-.button.primary.border {
-    background-color: var(--accent-rose);
-    color: var(--color-neutral-100);
-}
-
 .nav-secondary a {
     font-family: var(--font-title);
     font-size: var(--h4);
     font-weight: var(--font-weight-bold);
-    letter-spacing: var(--letter-spacing-med);
+    letter-spacing: var(--letter-spacing-medium);
     text-transform: lowercase;
     color: var(--color-neutral-400);
     background-color: var(--color-neutral-900);
+}
+
+figure {
+    width: 11px;
+    height: 11px;
+    background-color: var(--accent-green);
+    margin-top: 2px;
+}
+
+h2 {
+    font-size: var(--h2);
+    text-transform: lowercase;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-bold);
+}
+.description {
+    font-family: var(--font-dynamic);
+    font-size: var(--font-size-medium);
+    letter-spacing: var(--letter-spacing-small);
+    line-height: var(--line-height);
 }
