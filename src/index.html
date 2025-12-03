@@ -13,14 +13,14 @@
 <include src="components/header.html"></include>
 <main class="main-content">
   <div class="column-left">
-      <nav class="secondary-navigation-left">
-        <ul class="nav-secondary">
-          <li class="nav-secondary left"><a href="#">news</a></li>
-          <li class="nav-secondary left"><a href="#">events</a></li>
-          <li class="nav-secondary left"><a href="#">opencall</a></li>
+      <nav class="nav-secondary left">
+        <ul class="nav-links">
+          <li class="left-news"><a href="#">news</a></li>
+          <li class="left-events"><a href="#">events</a></li>
+          <li class="left-opencall"><a href="#">opencall</a></li>
         </ul>
       </nav>
-
+    <div class="article-items">
       <article class="artivle-news">
         <div class="article-header"> 
           <!-- <div class="placeholder"><img src="img/card/placeholder.png" alt=""></div> -->
@@ -42,40 +42,73 @@
           </div>
         </div>
         <section class="description">
-          <p>Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction</p>
+          <p>Schwelle (engl. = threshold, psych.) – a limit below which a stimulus causes no reaction.</p>
         </section>
-
+      <footer><img class="card-news" src="img/card/photo-card.png" alt="card news"></footer>
+      </article>
+      <article class="artivle-news">
+        <div class="article-header"> 
+          <!-- <div class="placeholder"><img src="img/card/placeholder.png" alt=""></div> -->
+          <div class="article-detail">
+              <div class="article-time">
+                <figure></figure>
+                <p>21.11.2025</p> 
+              </div>
+              <div class="time-place">
+                <p>The hague</p> 
+              </div>
+          </div>
+          <h2 class="card-titre">raster. electric campfire </h2>
+          <div>
+            <a href="#" class="button primary">
+              <p class="symbol">⇉</p>
+              <p>more</p>
+            </a>
+          </div>
+        </div>
+        <section class="description">
+          <p>Electric Campfire at HELLERAU opened a new chapter of the iconic electronic night with performances by leading artists, the reconstructed Appia Stage, and the “Circle X Circle” installation as part of the “Appia Stage Reloaded” festival.</p>
+        </section>
       <footer><img class="card-news" src="img/card/photo-card.png" alt="card news"></footer>
       </article>
     </div>
-  </main>
+  </div>
+
   <div class="column-right">
-    <nav class="nav-secondary-right"><div class="latest-releases"><li><a href="#">latest releases</a></li></div>
+    <nav class="nav-secondary right"><li><a href="#">latest releases</a></li></nav>
     <article class="last-releases">
-      <header>
-        <div class="date">21.11.2025</div>
-        <a href="#" class="buy button outline">
-            <p class="symbol">✇</p>
-            <p>buy</p>
-        </a>
-      </header>
-
-        <section class="tags">
-          <div class="tags"></div>
-        </section>
-
-        <section class="player">
-          <audio id="player" srcv class="player-ui">
-            <source src="#" type="audio/mpeg">
-            <div class="status">
-              <span class="dot"></span>
-              <span class="text">STOP</span>
-            </div>
-            <div class="time">
-              <span id="current">00:00.000</span> / <span id="total">00:00.000</span>
-            </div>
-            <div class="event">EVENT</div>
-        </section>
+      <div class="article-header">
+        <div class="article-time article-detail">
+          <figure></figure>
+          <p>21.11.2025</p> 
+        </div>
+        <div class="group-buttons">
+          <a href="#" class="button primary">
+              <p class="symbol">⇉</p>
+              <p>more</p>
+          </a>
+          <a href="#" class="button border">
+              <p class="symbol">✇</p>
+              <p>buy</p>
+          </a>
+        </div>
+  </div>
+      <section class="tags">
+        <div class="tags"></div>
+       </section>
+      <section class="player">
+        <audio id="player" class="player-ui" src="#">
+          <source src="#" type="audio/mpeg">
+        </audio>
+        <div class="status">
+          <span class="dot"></span>
+          <span class="text">STOP</span>
+        </div>
+        <div class="time">
+            <span id="current">00:00.000</span> / <span id="total">00:00.000</span>
+        </div>
+        <div class="event">EVENT</div>
+      </section>
         <section class="name artistes">
           <div class="name-artistes"></div>
         </section>

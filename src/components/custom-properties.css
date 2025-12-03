@@ -79,11 +79,20 @@
     padding: 5px;
 }
 
+.button.border{
+    background-color: var(--color-neutral-100);
+    color: var(--accent-rose);
+    border: 1px solid var(--accent-rose);
+    width: 256px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
 .button.tag {
     padding: var(--padding-small);
 }
 
-.nav-secondary a {
+.nav-links a {
     font-family: var(--font-title);
     font-size: var(--h4);
     font-weight: var(--font-weight-bold);

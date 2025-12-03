@@ -4,8 +4,14 @@
   padding: 0;
 }
 
+html, body {
+  /* Prevent horizontal scroll when some element overflows viewport while debugging layout */
+  overflow-x: hidden;
+}
+
 body {
-  margin: 50px 32px;
+  margin: 50px 0px;
+  padding: 0 32px;
   color: var(--color-neutral-900);
 }
 
@@ -31,21 +37,18 @@ main.main-content {
   grid-template-columns: 1fr 1fr;
 }
 
-.secondary-navigation-left {
+.nav-secondary {
  border-top: 2px solid var(--color-neutral-900);
  border-bottom: 4px solid var(--color-neutral-900);
  padding: 15.5px 0;
 }
 
-.nav-secondary  {
+.nav-secondary.left .nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-}
-.column-left {
-  padding-right: 32px;
-  
+  flex-direction: row;
+  padding-right: 32px; 
 }
 /* ------------------------------------------------------------------------------ */
 
@@ -55,11 +58,11 @@ main.main-content {
 
 /* -------------------------------🤔🤔🤔--------------------------------------- */
 
-.article-detail{
+.article-detail {
   display: flex;
   flex-direction: column;
   width: min-content;
-  align-items: flex-end;
+  align-items: baseline;
   font-family: var(--font-dynamic);
   font-size: var(--fonts-size-small);
   letter-spacing: var(--letter-spacing-small);
@@ -89,8 +92,36 @@ main.main-content {
   grid-column-start: 2;
 }
 
-article{
+article {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 28px;
+  margin-top: 32px;
+  padding-right: 32px;
+}
+.article-items {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+/* -------------------------------LEFT SIDE-- + PLACEHOLDER + SCROLL------------------------------------- */
+
+/* -------------------------------RIGHT SIDE--------------------------------------- */
+.column-right {
+  grid-column-start: 2;
+  background-color: var(--color-neutral-400);
+}
+
+.nav-secondary.right {
+  background-color: var(--accent-blue);
+  font-family: var(--font-title);
+  font-size: var(--h4);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.group-buttons {
+  display:flex;
+  flex-direction: row;
+  gap: 64px;
 }
