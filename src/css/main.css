@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-  margin: 50px 0px;
-  padding: 0 32px;
+  margin: 0;
+  
   color: var(--color-neutral-900);
 }
 
@@ -25,10 +25,11 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
-
-.header{
-  display: none;
+main {
+  padding: 0 32px;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -125,24 +126,51 @@ article {
   flex-direction: row;
   gap: 64px;
 }
-.tags {
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-}
 
-.tags.dark.button {
+
+.tag.dark.button {
   background-color: var(--color-neutral-900);
   color: var(--color-neutral-400);
   padding: 5px 0;
   width: fit-content;
 }
-.up-row {
+
+section.tags {
   display: grid;
-  grid-template-columns: ;
-  
+  grid-template-columns: repeat(12, 1fr);
+
 }
+
+.up-row,
 .down-row {
-  display: grid;
-  grid-template-columns: repeat(10, max-content);
-  
+  display: contents;
 }
+.up-row > :nth-child(1) { 
+  grid-row: 1; 
+  grid-column: 1 / span 2; 
+}
+.up-row > :nth-child(2) { 
+  grid-row: 1;
+   grid-column: 9 / span 2; 
+  }
+.up-row > :nth-child(3) { 
+  grid-row: 1; 
+  grid-column: 12 / span 2; 
+}
+
+.down-row > :nth-child(1) { 
+  grid-row: 2; 
+  grid-column: 2 / span 4; 
+}
+.down-row > :nth-child(2) { 
+  grid-row: 2; 
+  grid-column-end: 9; 
+}
+.down-row > :nth-child(3) { 
+  grid-row: 2; 
+  grid-column: 10 / span 2; 
+}
+
+
+/* -------------------------------🚩🚩🚩🚩Player--------------------------------------- */
+
