@@ -7,6 +7,7 @@
 html, body {
   /* Prevent horizontal scroll when some element overflows viewport while debugging layout */
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -52,18 +53,16 @@ main.main-content {
   padding: 0 32px; 
 }
 /* ------------------------------------------------------------------------------ */
-
-.placeholder img {
-  display: none;
+.placeholder{
+  margin: auto auto;
 }
-
 /* -------------------------------🤔🤔🤔--------------------------------------- */
 
 .article-detail {
   display: flex;
   flex-direction: column;
   width: min-content;
-  align-items: baseline;
+  align-items: flex-end;
   font-family: var(--font-dynamic);
   font-size: var(--fonts-size-small);
   letter-spacing: var(--letter-spacing-small);
@@ -107,14 +106,6 @@ article {
 /* -------------------------------LEFT SIDE-- + PLACEHOLDER + SCROLL------------------------------------- */
 
 /* -------------------------------RIGHT SIDE--------------------------------------- */
-.column-right {
-  grid-column-start: 2;
-  background-color: var(--color-neutral-400);
-}
-.content{
-  padding-left: 32px;
-  padding-right: 32px;
-}
 .nav-secondary.right {
   background-color: var(--accent-blue);
   font-family: var(--font-title);
@@ -122,13 +113,33 @@ article {
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
-
 .group-buttons {
   display:flex;
   flex-direction: row;
-  gap: 64px;
+  column-gap: 64px;
 }
 
+.column-right {
+  background-color: var(--color-neutral-400);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.top-column{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.last-releases {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-article {
+  margin-top: auto;
+}
 
 .tag.dark.button {
   background-color: var(--color-neutral-900);
@@ -174,5 +185,103 @@ section.tags {
 }
 
 
-/* -------------------------------🚩🚩🚩🚩Player--------------------------------------- */
-.player-playlist
+/* -------------------------------🚩Player🚩--------------------------------------- */
+section.player-playlist {
+  background-color: var(--color-neutral-900);
+  color: var(--accent-green);
+  width: max-content;
+  padding: 5px 5px;
+  display: flex;
+  gap: 32px;
+  margin: auto auto;
+}
+.status{
+  display: flex;
+}
+/* -------------------------------🚩Name-Albom🚩--------------------------------------- */
+
+.name-artistes,
+.name-release {
+  height: 68px;
+  background-color: var(--color-neutral-100);
+  width: max-content;
+  overflow: hidden;
+  position: relative; 
+}
+.card-titre.big-size {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h1);
+  line-height: 68px;
+}
+.name-release .card-titre>span{
+  font-size: var(--h3);
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+
+/* -------------------------------Footer--------------------------------------- */
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-neutral-900);
+  color: var(--color-neutral-400);
+  height: 60px;
+  user-select: none;
+  width: 70%;
+}
+
+
+.ticker-track{
+  display: flex;
+  flex-wrap: nowrap;       
+  white-space: nowrap;     
+  width: max-content;      
+  will-change: transform;
+  animation: ticker-move 35s linear infinite;
+}
+
+
+
+.ticker-list{
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding-inline: 32px;
+  font-family: var(--font-dynamic);
+  font-size: var(--h3);
+  line-height: 1;
+  white-space: nowrap; 
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+
+.ticker-list li{
+  display: inline-flex;
+  align-items: center;
+}
+.ticker-list li + li::before{
+  content: "•";
+  margin-inline: 32px;
+  opacity: .7;
+}
+
+@keyframes ticker-move{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-track{
+  animation-direction: reverse; 
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ticker-track{
+    animation: none;
+    transform: none;
+  }
+}
+

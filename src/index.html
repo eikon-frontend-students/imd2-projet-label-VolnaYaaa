@@ -49,8 +49,8 @@
           </article>
           <article class="artivle-news">
             <div class="article-header"> 
-              <!-- <div class="placeholder"><img src="img/card/placeholder.png" alt=""></div> -->
-              <div class="article-detail">
+              <div class="placeholder"><img src="img/card/placeholder.png" alt="placeholder"></div>
+              <!-- <div class="article-detail">
                   <div class="article-time">
                     <figure></figure>
                     <p>21.11.2025</p> 
@@ -71,7 +71,7 @@
               <p>Electric Campfire at HELLERAU opened a new chapter of the iconic electronic night with performances by leading artists, the reconstructed Appia Stage, and the “Circle X Circle” installation as part of the “Appia Stage Reloaded” festival.</p>
             </section>
           <footer><img class="card-news" src="img/card/photo-card.png" alt="card news"></footer>
-          </article>
+          </article> -->
         </div>
     </section>
     
@@ -81,23 +81,24 @@
     <nav class="nav-secondary right"><li><a href="#">latest releases</a></li></nav>
     <section class="content">
       <article class="last-releases">
-        <div class="article-header">
-          <div class="article-time article-detail">
-            <figure></figure>
-            <p>21.11.2025</p> 
+        <div class="top-column">
+          <div class="article-header">
+              <div class="article-time article-detail">
+                <figure></figure>
+                <p>21.11.2025</p> 
+              </div>
+              <div class="group-buttons">
+                <a href="#" class="button primary">
+                    <p class="symbol">⇉</p>
+                    <p>more</p>
+                </a>
+                <a href="#" class="button border">
+                    <p class="symbol">✇</p>
+                    <p>buy</p>
+                </a>
+              </div>
           </div>
-          <div class="group-buttons">
-            <a href="#" class="button primary">
-                <p class="symbol">⇉</p>
-                <p>more</p>
-            </a>
-            <a href="#" class="button border">
-                <p class="symbol">✇</p>
-                <p>buy</p>
-            </a>
-          </div>
-        </div>
-        <section class="tags">
+          <section class="tags">
           <div class="up-row">
             <div class="tag dark button"><a href="#"></a>r-m215</div>
             <div class="tag dark button"><a href="#"></a>techno</div>
@@ -108,13 +109,14 @@
             <div class="tag dark button"><a href="#"></a>synthesizer</div>
             <div class="tag dark button"><a href="#"></a>digital</div>
           </div>
-        </section>
-        <section class="player-playlist">
+          </section>
+        </div>
+        <section class="player-playlist button">
           <audio id="player" class="player-ui" src="#">
             <source src="#" type="audio/mpeg">
           </audio>
-          <div class="status">
-            <figure></figure>
+          <div class="play-bt button">
+            <figure class="circle"></figure>
             <span class="text">STOP</span>
           </div>
           <div class="time">
@@ -122,25 +124,42 @@
           </div>
           <div class="event">EVENT</div>
         </section>
+          
+        <footer class="footer-article">
           <section class="name artistes">
-            <div class="name-artistes"> <h2>gábor lázár</h2></div>
-            <div class="name-release"> <h2> reflex <span>(7)</span></h2>
-              
+            <div class="name-artistes"><h2 class="card-titre big-size">gábor lázár</h2></div>
+            <div class="name-release"><h2 class="card-titre big-size"> reflex <span>( 7 )</span></h2>
             </div>
           </section>
-        </section> 
-          <footer>
             <img src="./img/card/photo-albom.png" alt="Gábor Lázár - reflex">
           </footer>
+        </section> 
+          
       </article>
     </section>
   </div>
 </main>
 <footer>
   
-  <div class="marquee">
-    <span class="dot"></span>
-    <span class="item"></span>
+  <div class="ticker" aria-label="Theme: Experimental, Digital, Minimalist, Conceptual, Avant-Garde, Interdisciplinary">
+    <div class="ticker-track">
+      <ul class="ticker-list">
+        <li>Experimental</li>
+        <li>Digital</li>
+        <li>Minimalist</li>
+        <li>Conceptual</li>
+        <li>Avant-Garde</li>
+        <li>Interdisciplinary</li>
+      </ul>
+      <ul class="ticker-list" aria-hidden="true">
+        <li>Experimental</li>
+        <li>Digital</li>
+        <li>Minimalist</li>
+        <li>Conceptual</li>
+        <li>Avant-Garde</li>
+        <li>Interdisciplinary</li>
+      </ul>
+    </div>
   </div>
 
   <div class="platforms">

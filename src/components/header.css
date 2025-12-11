@@ -81,15 +81,7 @@ button.projets {
     font-size: var(--font-size-small);
     text-transform: uppercase;
     font-weight: var(--font-weght-light);
-
-} 
-.play>figure{
-    border-radius: 100%;
-    margin: 0;
-
-
 }
 .play {
-    border-right: 2px solid var(--accent-green);
-    gap: 5px;
+    border-right: 1px solid var(--accent-green);
 }
